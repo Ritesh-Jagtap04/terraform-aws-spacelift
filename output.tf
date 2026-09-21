@@ -1,7 +1,7 @@
 output "bucket_name" {
-  value = aws_s3_bucket.poc_bucket.bucket
+  value = aws_s3_bucket.dev_bucket.bucket
 }
 
 output "bucket_arn" {
-  value = aws_s3_bucket.poc_bucket.arn
+  value = aws_s3_bucket.dev_bucket.arn
 }
