@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "prod_bucket" {
 }
 
 resource "aws_s3_bucket_versioning" "prod_bucket" {
-  bucket = aws_s3_bucket.dev_bucket.id
+  bucket = aws_s3_bucket.prod_bucket.id
   versioning_configuration {
     status = "Enabled"
   }
