@@ -1,5 +1,5 @@
 module "lambda_builds_s3_bucket" {
-  source  = "spacelift.io/iac-acn-demo/s3/aws"
+  source  = "us.spacelift.io/iac-acn-demo/s3/aws"
   version = "0.1.0"
 
   bucket_name                        = "${var.bucket_name_prefix}-${data.aws_caller_identity.current.account_id}"
